@@ -1,0 +1,17 @@
+class Animal {
+  void makeSound() {
+    print('Generic sound');
+  }
+}
+
+class Dog extends Animal {
+  @override
+  void makeSound() {
+    print('bark');
+  }
+}
+
+void main() {
+  Dog myDog = Dog();
+  myDog.makeSound(); // This should print "bark"
+}
