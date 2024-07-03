@@ -1,0 +1,18 @@
+void main() {
+  Car alto = Car("suzuki", "alto", 2008);
+  print('brand ${alto.brand}');
+  print('model ${alto.model}');
+  print('year ${alto.year}');
+}
+
+class Car {
+  String? brand;
+  String? model;
+  int? year;
+
+  Car(String brand, String model, int year) {
+    this.brand = brand;
+    this.model = model;
+    this.year = year;
+  }
+}
